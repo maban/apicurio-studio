@@ -111,7 +111,7 @@
         <version.org.jboss.spec.javax.ws.jboss-jaxrs-api_2.0_spec>1.0.1.Beta1</version.org.jboss.spec.javax.ws.jboss-jaxrs-api_2.0_spec>
         <version.org.json>20160212</version.org.json>
         <version.org.keycloak>3.2.1.Final</version.org.keycloak>
-        <version.org.postgresql>9.4.1212</version.org.postgresql>
+        <version.org.postgresql>42.2.13</version.org.postgresql>
         <version.org.slf4j>1.7.7</version.org.slf4j>
     </properties>
 
@@ -307,8 +307,7 @@
                             <configuration>
                                 <fail>true</fail>
                                 <rules>
-                                    <illegalTransitiveDependencyCheck
-                                        implementation="de.is24.maven.enforcer.rules.IllegalTransitiveDependencyCheck">
+                                    <illegalTransitiveDependencyCheck implementation="de.is24.maven.enforcer.rules.IllegalTransitiveDependencyCheck">
                                         <reportOnly>false</reportOnly>
                                         <regexIgnoredClasses>
                                             <regexIgnoredClass>javax\..+</regexIgnoredClass>
