@@ -98,7 +98,7 @@
         <version.commons-cli>1.3.1</version.commons-cli>
         <version.commons-codec>1.10</version.commons-codec>
         <version.commons-dbcp>1.4</version.commons-dbcp>
-        <version.commons-io>2.4</version.commons-io>
+        <version.commons-io>2.7</version.commons-io>
         <version.commons-lang>2.6</version.commons-lang>
         <version.commons-pool>1.6</version.commons-pool>
         <version.io.prometheus>0.1.0</version.io.prometheus>
@@ -307,8 +307,7 @@
                             <configuration>
                                 <fail>true</fail>
                                 <rules>
-                                    <illegalTransitiveDependencyCheck
-                                        implementation="de.is24.maven.enforcer.rules.IllegalTransitiveDependencyCheck">
+                                    <illegalTransitiveDependencyCheck implementation="de.is24.maven.enforcer.rules.IllegalTransitiveDependencyCheck">
                                         <reportOnly>false</reportOnly>
                                         <regexIgnoredClasses>
                                             <regexIgnoredClass>javax\..+</regexIgnoredClass>
